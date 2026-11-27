@@ -37,7 +37,7 @@
     "@n8n/node-cli": "0.57.4",
     "esbuild": "0.28.2",
     "eslint": "9.29.0",
-    "n8n-workflow": "2.16.0"
+    "n8n-workflow": "2.49.5"
   },
   "peerDependencies": {
     "n8n-workflow": "*"
