@@ -1,0 +1,49 @@
+{
+  "name": "n8n-nodes-filemulti",
+  "version": "0.1.0",
+  "type": "commonjs",
+  "description": "Convert, compress and recognise files with FileMulti tools from an n8n workflow",
+  "license": "MIT",
+  "homepage": "https://filemulti.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filemulti/n8n-nodes-filemulti.git"
+  },
+  "bugs": {
+    "url": "https://github.com/filemulti/n8n-nodes-filemulti/issues"
+  },
+  "keywords": [
+    "n8n-community-node-package"
+  ],
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [
+      "dist/credentials/FileMultiOAuth2Api.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Filemulti/Filemulti.node.js"
+    ]
+  },
+  "scripts": {
+    "lint": "n8n-node lint",
+    "build": "node build.mts https://filemulti.com"
+  },
+  "devDependencies": {
+    "@convertator/client": "file:vendor/client",
+    "@n8n/node-cli": "0.57.4",
+    "esbuild": "0.28.2",
+    "eslint": "9.29.0",
+    "n8n-workflow": "2.16.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "author": {
+    "name": "FileMulti",
+    "email": "support@filemulti.com"
+  }
+}
